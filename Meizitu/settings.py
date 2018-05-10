@@ -14,7 +14,7 @@ BOT_NAME = 'Meizitu'
 SPIDER_MODULES = ['Meizitu.spiders']
 NEWSPIDER_MODULE = 'Meizitu.spiders'
 
-IMAGE_STORE = 'E:\demo\spider\Meizitu\images'
+IMAGE_STORE = 'E:\demo\spider\Meizitu\\'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Meizitu (+http://www.yourdomain.com)'
 

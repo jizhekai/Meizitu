@@ -15,13 +15,13 @@ class MeizituPipeline(object):
         # 从settings里获取存入本地的地址
         IMAGE_STORE = get_project_settings().get("IMAGE_STORE")
 
-        # 如果没有settings里设置的文件夹地址，就创建一个
-        if not os.path.exists(IMAGE_STORE):
-            os.mkdir(IMAGE_STORE)
+        # 创建images文件夹
+        if not os.path.exists(IMAGE_STORE + "images"):
+            os.mkdir(IMAGE_STORE + "images")
 
         # 设置保存到本地的图片的名字（该设置为套图入站日期）
         image_path = "-".join(item["image_url"].split(".")[2][4:].split("/"))
-        path = IMAGE_STORE + "\\" + item["title"]
+        path = IMAGE_STORE + "images" + "\\" + item["title"]
 
         # 创建每组套图存放的文件夹
         if not os.path.exists(path):
