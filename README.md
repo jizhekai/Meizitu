@@ -9,7 +9,7 @@
 
 ### 部分预览：
 
-![avatar](E:\demo\spider\Meizitu\1.png)
+![avatar](1.png)
 
 ### 使用说明：
 * 直接copy到本地
